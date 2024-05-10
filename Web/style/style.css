@@ -59,3 +59,23 @@ footer {
     padding: 20px;
     background-color: #f8f9fa;
 }
+
+.navbar-custom {
+    background-color: #333;
+}
+
+/* Estilo para los enlaces del navbar */
+.navbar-custom .nav-link {
+    color: #fff;
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+/* Estilo para los enlaces del navbar al pasar el ratón sobre ellos */
+.navbar-custom .nav-link:hover {
+    color: #18bc9c; /* Color verde al pasar el ratón */
+}
+
+/* Estilo para los enlaces del navbar activos (cuando se ha hecho clic en ellos) */
+.navbar-custom .nav-link.active {
+    color: #18bc9c; /* Color verde para el enlace activo */
+}
