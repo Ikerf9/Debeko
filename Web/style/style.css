@@ -79,3 +79,11 @@ footer {
 .navbar-custom .nav-link.active {
     color: #18bc9c; /* Color verde para el enlace activo */
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior de la página */
+    right: 20px; /* Ajusta la distancia desde el lado derecho de la página */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
