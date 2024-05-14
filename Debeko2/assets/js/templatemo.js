@@ -1,4 +1,4 @@
-/*
+/* /*
 
 TemplateMo 559 Zay Shop
 
@@ -55,3 +55,4 @@ $(document).ready(function() {
     // End roduct detail
 
 });
+ 

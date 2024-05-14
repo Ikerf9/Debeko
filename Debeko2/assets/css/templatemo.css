@@ -189,3 +189,11 @@ body, ul, li, p, a, label, input, div {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+      height: 200px; /* Ajusta la altura como prefieras */
+      width: 350px;
+      margin-top: -20px; /* Permite que el ancho se ajuste automáticamente para mantener la proporción */
+  }
+}
