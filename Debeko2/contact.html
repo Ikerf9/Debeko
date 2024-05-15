@@ -139,13 +139,8 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Contact -->
     <div class="container py-5">
         <div class="row py-5">
-            <form action="enviar.php" class="col-md-9 m-auto" method="POST" role="form" onsubmit="validarFormulario(event)">
-                <!-- Campo oculto para el asunto del correo -->
-                <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
-                <!-- Campo oculto para redirigir a una página de agradecimiento después del envío -->
-                <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
-                <!-- Campo oculto para evitar el spam -->
-                <input type="hidden" name="_captcha" value="false">
+            <form  action="https://formsubmit.co/farinasiker@gmail.com" method="POST" class="col-md-9 m-auto"  role="form" >
+             
     
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
@@ -167,7 +162,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="row">
                     <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
+                        <button type="submit" class="btn btn-success btn-lg px-3 " onclick="validarFormulario(event)">Enviar</button>
                         <button type="reset" class="btn btn-success btn-lg px-3">Borrar</button>
                     </div>
                 </div>

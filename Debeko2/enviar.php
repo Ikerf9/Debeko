@@ -1,32 +1,30 @@
 <?php
-$name= $_POST['nombre'];
-$email= $_POST['email'];
-$asunto=$_POST['asunto'];
-$mensaje=$_POST['mensaje'];
+$name = $_POST['nombre'];
+$email = $_POST['email'];
+$asunto = $_POST['asunto'];
+$mensaje = $_POST['mensaje'];
 
-$header= 'Desde: '. $email . '\n';
-$header='Mine version: 1.0 \n';
-$header= 'Content-Type: text/plain';
+// Configuración de las cabeceras
+$header = 'From: ' . $email . "\r\n";
+$header .= 'MIME-Version: 1.0' . "\r\n";
+$header .= 'Content-Type: text/plain; charset=UTF-8' . "\r\n";
 
-$message='Mensaje enviado por: '. $name . '\n';
-$message='Su email es: '. $email.'\n';
-$message= 'Asunto: '. $asunto.'\n';
-$message='Mensaje: '. $$mensaje . '\n';
+// Construcción del mensaje
+$message = 'Mensaje enviado por: ' . $name . "\n";
+$message .= 'Su email es: ' . $email . "\n";
+$message .= 'Asunto: ' . $asunto . "\n";
+$message .= 'Mensaje: ' . $mensaje . "\n";
 
-$para='farinasiker@gmail.com';
-$asunto2='Asunto del mensaje: ';
+// Dirección de destino
+$para = 'farinasiker@gmail.com';
+$asunto2 = 'Asunto del mensaje: ' . $asunto;
 
-mail($para, $asunto2, mb_convert_encoding($message, 'UTF-8', 'auto'), $header);
+// Envío del correo
+mail($para, $asunto2, $message, $header);
 
-
-
-
-
-
-
-
-
-
-
-
+if(mail($para, $asunto2, $message, $header)) {
+    echo "Correo enviado exitosamente.";
+} else {
+    echo "Error al enviar el correo.";
+}
 ?>
