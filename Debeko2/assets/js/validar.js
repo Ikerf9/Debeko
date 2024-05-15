@@ -44,5 +44,30 @@ function validarFormulario(event) {
         return false; 
     }
 
+    
+    let parm = {
+      
+        nombre: document.getElementById("nombre").value,
+        email: document.getElementById("email").value,
+        asunto: document.getElementById("asunto").value,
+        mensaje: document.getElementById("mensaje").value
+    }
+    emailjs.send("service_c93y6im","template_yr3nkxw",parm).then(alert("El email se ha enviado correctamente"));
+
+
+   
+
+
     return true;
+
+
+   
 }
+
+(function(){
+    emailjs.init({
+      publicKey: "Kr91kV7NegRjoEvZR",
+    });
+ })();
+
+
