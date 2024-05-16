@@ -21,3 +21,24 @@
     
     
 }
+
+.img-pequena {
+    max-height: 300px;
+    width: auto;
+    margin-left: 20px;
+    
+}
+
+.imgborder{
+    max-height: 300px;
+    width: auto;
+   
+    border: 4px solid #000;
+
+}
+
+.imgsinborder{
+    max-height: 300px;
+    width: auto;
+
+}
