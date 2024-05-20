@@ -7,6 +7,16 @@
   
     
 }
+#img1{
+    background-image: url(../img/bosque.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    filter: blur(0px);
+    margin-bottom: 20px;
+  
+    
+}
 
 @keyframes bounce {
     0% { transform: translateY(0); }
@@ -41,4 +51,52 @@
     max-height: 300px;
     width: auto;
 
+    
+   
+
 }
+
+@media (max-width: 767px) {
+    .imgsinborder {
+        max-height: 600px; /* Aumenta el tamaño máximo en dispositivos móviles */
+        width: 100%; /* Hace que la anchura sea automática para ajustarse al contenedor */
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
