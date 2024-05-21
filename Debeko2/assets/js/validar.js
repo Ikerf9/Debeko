@@ -67,6 +67,7 @@ function validarFormulario(event) {
 (function(){
     emailjs.init({
       publicKey: "Kr91kV7NegRjoEvZR",
+      
     });
  })();
 
