@@ -9,14 +9,14 @@
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
     
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
 
     <!-- Load map styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -67,33 +67,33 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index2.html">Hasiera</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
+                            <a class="nav-link" href="zerbitzu.html">Zerbitzuak</a>
                         </li>
-                       
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Idioma
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hizkuntza
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                                <a class="dropdown-item" href="#">
-                                    <img src="ruta/a/imagen4.jpg" alt="" style="height: 20px; width: auto; margin-right: 10px;">
-                                    Opción A
+                                <a class="dropdown-item" href="../index.html">
+                                    <img src="ruta/a/imagen4.jpg" alt=""
+                                        style="height: 20px; width: auto; margin-right: 10px;">
+                                    Gaztelera
                                 </a>
                                 <a class="dropdown-item" href="#">
-                                    <img src="ruta/a/imagen5.jpg" alt="" style="height: 20px; width: auto; margin-right: 10px;">
-                                    Opción B
+                                    <img src="ruta/a/imagen5.jpg" alt=""
+                                        style="height: 20px; width: auto; margin-right: 10px;">
+                                    Inglesa
                                 </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="ruta/a/imagen6.jpg" alt="" style="height: 20px; width: auto; margin-right: 10px;">
-                                    Opción C
-                                </a>
+
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
+                            <a class="nav-link" href="kontaktu.html">Kontaktu</a>
                         </li>
                     </ul>
                 </div>
@@ -136,29 +136,29 @@
             <form method="POST" class="col-md-9 m-auto" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Nombre</label>
-                        <input type="text" class="form-control mt-1" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <label for="inputname">Izena</label>
+                        <input type="text" class="form-control mt-1" id="nombre" name="nombre" placeholder="Izena" required>
                     </div>
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Email</label>
-                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email" required>
+                        <label for="inputemail">Emaila</label>
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Emaila" required>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Asunto</label>
-                    <input type="text" class="form-control mt-1" id="asunto" name="asunto" placeholder="Asunto" required>
+                    <label for="inputsubject">Gaia</label>
+                    <input type="text" class="form-control mt-1" id="asunto" name="asunto" placeholder="Gaia" required>
                 </div>
                 <div class="mb-3">
-                    <label for="inputmessage">Mensaje</label>
-                    <textarea class="form-control mt-1" id="mensaje" name="mensaje" placeholder="Escriba aqui su mensaje" rows="8" required></textarea>
-                    Por favor, antes de enviar lee y acepta nuestra <a href="politicadeprivacidad.html" target="_blank">Política de privacidad</a><br>
-                    <b>Aceptar</b><input type="checkbox"name="checkbox[]"
+                    <label for="inputmessage">Mezua</label>
+                    <textarea class="form-control mt-1" id="mensaje" name="mensaje" placeholder="Idatzi hemen zure mezua" rows="8" required></textarea>
+                    Mesedez, bidali aurretik, irakurri eta onartu gure <a href="pribatutasun-politika.html" target="_blank">Pribatutasun Politika</a><br>
+                    <b>Onartu</b><input type="checkbox"name="checkbox[]"
                                 style="margin-top: -25px; width: 30px;">
                 </div>
                 <div class="row">
                     <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3" onclick="validarFormulario(event)">Enviar</button>
-                        <button type="reset" class="btn btn-success btn-lg px-3">Borrar</button>
+                        <button type="submit" class="btn btn-success btn-lg px-3" onclick="validarFormulario(event)">Bidali</button>
+                        <button type="reset" class="btn btn-success btn-lg px-3">Ezabatu</button>
                     </div>
                 </div>
             </form>
@@ -166,13 +166,13 @@
     </div>
     <!-- End Contact -->
 
-   <!-- Start Footer -->
-   <footer class="bg-dark" id="tempaltemo_footer">
+  <!-- Start Footer -->
+  <footer class="bg-dark" id="tempaltemo_footer">
     <div class="container">
         <div class="row">
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-success border-bottom pb-3 border-light logo">Contáctanos</h2>
+                <h2 class="h2 text-success border-bottom pb-3 border-light logo">Gurekin Kontaktatu</h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li>
                         <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -180,29 +180,34 @@
                     </li>
                     <li>
                         <i class="fa fa-phone fa-fw"></i>
-                        <a class="text-decoration-none" href="tel:+943176414" >943 176 414 / 629 278 004</a>
+                        <a class="text-decoration-none" href="tel:+943176414">943 176 414 / 629 278 004</a>
                     </li>
                     <li>
                         <i class="fa fa-envelope fa-fw"></i>
-                        <a class="text-decoration-none" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=debeko@debeko.eus" >debeko@debeko.eus</a>
+                        <a class="text-decoration-none"
+                            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=debeko@debeko.eus">debeko@debeko.eus</a>
                     </li>
                 </ul>
             </div>
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Mas Información</h2>
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Informazio Gehiago</h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none"
                             href="https://vizcaya.buscalis.com/ermua/limpieza/limpieza-debeko-kontenedoreak">Buscalis</a>
                     </li>
-                    <li><a class="text-decoration-none" href="https://empresite.eleconomista.es/DEBA-BEHEKO-KONTENEDOREAK.html">Empresite</a></li>
-                    <li><a class="text-decoration-none" href="https://www.empresia.es/distintivo/debeko-deba-beheko-kontenedoreak-sl/oepm/m-2694286/#google_vignette">Empresia</a></li>
+                    <li><a class="text-decoration-none"
+                            href="https://empresite.eleconomista.es/DEBA-BEHEKO-KONTENEDOREAK.html">Empresite</a>
+                    </li>
+                    <li><a class="text-decoration-none"
+                            href="https://www.empresia.es/distintivo/debeko-deba-beheko-kontenedoreak-sl/oepm/m-2694286/#google_vignette">Empresia</a>
+                    </li>
 
                 </ul>
             </div>
 
             <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Encuéntranos</h2>
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Aurkitu Gaitzazu</h2>
                 <ul class="list-unstyled text-light footer-link-list">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11286.64785616112!2d-2.5058884!3d43.1926967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e2b0090e9325f%3A0x72a18cc10395227f!2sDebeko!5e0!3m2!1ses!2ses!4v1648051832264!5m2!1ses!2ses"
@@ -211,6 +216,8 @@
             </div>
 
         </div>
+
+
     </div>
 
     <div class="w-100 bg-black py-3">
@@ -218,22 +225,25 @@
             <div class="row pt-2">
                 <div class="col-12">
                     <p class="text-left text-light">
-                        <a href="avisolegal.html" target="_blank" style="color: rgb(20, 113, 219);">Aviso legal</a> | <a href="politicadeprivacidad.html" target="_blank" style="color:rgb(20, 113, 219); ;">Política de Privacidad</a>
+                        <a href="lege-ohar.html" style="color: rgb(20, 113, 219);">Lege-Ohar</a> | <a
+                            href="pribatutasun-politika.html" style="color:rgb(20, 113, 219); ;">Pribatutasun Politika</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
+
 </footer>
-    <!-- End Footer -->
+<!-- End Footer -->
+
 
     <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script> 
-    <script src="./assets/js/validar.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/templatemo.js"></script>
+    <script src="../assets/js/custom.js"></script> 
+    <script src="../assets/js/validatu.js"></script>
     
 </body>
 

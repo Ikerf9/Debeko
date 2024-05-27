@@ -40,10 +40,13 @@
 }
 
 .imgborder{
-    max-height: 300px;
-    width: auto;
+    max-height: 220px;
+    width: 450px;
+    margin-left: 5%;
+
+
    
-    border: 4px solid #000;
+    border: 3px solid #000;
 
 }
 
